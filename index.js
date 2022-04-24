@@ -2,9 +2,10 @@ const express = require('express');
 const mongoose = require('mongoose');
 const shortUrl = require('./modals/shortUrl');
    const app = express();
+   const dotenv = require("dotenv");
    dotenv.config();
 
-   
+
    const url = process.env.MONGO;
  
 mongoose.connect(url , {
