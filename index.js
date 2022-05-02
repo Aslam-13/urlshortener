@@ -6,8 +6,7 @@ const shortUrl = require('./modals/shortUrl');
    dotenv.config();
 
 
-   const url = process.env.MONGO;
- 
+ const url = "mongodb+srv://aslam:aslam9941@mydb.kqmbv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"; 
 mongoose.connect(url , {
   useNewUrlParser: true, useUnifiedTopology: true
 })
